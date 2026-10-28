@@ -29,7 +29,7 @@
     el(`
       <section class="hero">
         <div class="eyebrow">Comm Exam 2</div>
-        <h1>Learn it. See it. Get tested.</h1>
+        <h1>BING BONG! (are you clutch, T-20hrs)</h1>
         <p>Ten short courses covering every theory on the exam. Each one teaches the content, walks through examples, then quizzes you.</p>
         <div class="how"><span class="pill"><b>1</b> Learn</span><span class="pill"><b>2</b> Examples</span><span class="pill"><b>3</b> Quiz (70%+ to complete)</span><span class="pill"><b>★</b> Final exam</span></div>
       </section>
