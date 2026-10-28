@@ -476,4 +476,95 @@
   ]
 
   };
+  // Added after comparing with sample exam questions: cross-theory decoys,
+  // "which is TRUE" statements, and situation-to-strategy matching.
+  const extra = {
+    evt: [
+      Q("Which of the following is TRUE according to Expectancy Violations Theory?",
+        "A violation can be judged positively if the person who committed it is seen as rewarding",
+        ["Any violation of a norm is judged negatively", "Violations only matter when they are about personal space", "Reciprocating and compensating are both ways of conforming to a norm"],
+        "Violation valence and communicator reward valence are separate judgments, so violations are not always negative."),
+      Q("A friend who always greets you warmly suddenly ignores you. Which concept best explains your surprise, rather than a decision about how to respond?",
+        "Predictive expectancy",
+        ["Compensation", "Negative face", "Comparison level"],
+        "Surprise at a break from someone's usual behavior is a predictive expectancy. Compensation is a reaction, and the other two belong to other theories.")
+    ],
+    face: [
+      Q("While visiting an unfamiliar town, Greg goes to a service window to buy a train ticket and asks how to find his platform. The best name for his communication with the ticket seller is:",
+        "Dyadic communication",
+        ["Emotional attachment", "Mutual influence", "Repeated interaction"],
+        "Two people communicating one-to-one is dyadic. There's no emotional attachment or repeated history, and 'mutual influence' is the interdependent part of the definition, not the name for the exchange."),
+      Q("Which relationship feature is NOT required for a conversation to be dyadic?",
+        "A long history together",
+        ["Two people", "Each person affecting the other", "Communication directed between the pair"],
+        "Dyadic only needs two people. A long relationship raises relational depth, but it isn't required.")
+    ],
+    politeness: [
+      Q("Clara, a senior vice president, must get factory workers to drop what they're doing immediately for a critically important task. Which strategy is she most likely to use?",
+        "Bald on record",
+        ["Positive politeness", "Negative politeness", "Going off record"],
+        "High power and an urgent, high-stakes task make a direct command the practical choice. Hints and softening would cost time."),
+      Q("An intern wants to ask the CEO, whom she has never met, to approve a large budget. Which approach is the most likely?",
+        "Negative politeness, making clear the CEO has a choice",
+        ["Bald on record", "Positive politeness only", "Avoidance, then asking anyway"],
+        "High power difference, high distance and high rank all push toward more politeness. Negative politeness respects the CEO's autonomy."),
+      Q("Which situation makes a bald on-record request MOST likely?",
+        "Close friends, and a very small request",
+        ["Strangers, large request", "Employee to executive, large request", "New acquaintances, personal request"],
+        "Low power difference, low distance and low rank mean little face is at stake, so directness is acceptable.")
+    ],
+    set: [
+      Q("Penelope's parents yelled constantly while she grew up. As a teen she worried they'd divorce but sometimes wondered if it would be better. How would exchange theory explain the influence on her future relationships?",
+        "Her comparison level was shaped by her parents' marriage",
+        ["Face threatening acts", "The relational expectations strategy", "Her comparison level of alternatives was set by her parents"],
+        "Comparison level is what you expect from a relationship, based on relationships around you and past ones, like parents fighting. Comparison level of alternatives is about other available options."),
+      Q("Which sentence uses 'comparison level' correctly?",
+        "She felt satisfied because her relationship was better than what she'd seen growing up",
+        ["She stayed because no one else was available", "She left because the costs were higher than the benefits", "She felt satisfied because the benefits equaled the costs"],
+        "Comparison level judges satisfaction against expectations. 'No one else available' is comparison level of alternatives.")
+    ],
+    cat: [
+      Q("Words and ways of speaking that in-group members use when talking among themselves are known as:",
+        "A restricted code",
+        ["Out-group homogeneity", "In-group elitism", "A preventative communication style"],
+        "In-groups use restricted codes; with out-groups we use elaborated codes."),
+      Q("The more we want to communicate our difference, status or unique cultural identity, the more likely we are to:",
+        "Diverge our speech",
+        ["Rely on interactive strategies", "Weigh violations as negative", "Use an expressive speaking style"],
+        "Divergence protects cultural identity and asserts power differences."),
+      Q("Which situation is MOST likely to produce convergence?",
+        "A job candidate wants to be approved of by the interviewer",
+        ["A teen wants to assert independence from her parents", "A speaker wants to emphasize his cultural identity", "A manager wants to underscore her authority"],
+        "Convergence increases attraction, social approval and persuasiveness. The other goals point toward divergence or maintenance.")
+    ],
+    rdt: [
+      Q("Which one of the following is TRUE according to relational dialectics theory?",
+        "Relational partners face a set of opposing tensions or contradictions",
+        ["There is one best strategy for resolving each tension", "Partners should be able to resolve their tensions if they practice the strategies", "Totality refers to the total number of antagonistic tensions a couple faces"],
+        "RDT is about ongoing contradictions and a tug of war. The strategies manage tensions rather than resolve them, and totality is awareness of both parts of a contradiction."),
+      Q("Brenda and Bill, both 30, move in together after years of living alone. They love each other but struggle over the lack of alone time. The tension is most likely:",
+        "Autonomy-connection",
+        ["Expression-privacy", "Openness-closedness", "Predictability-novelty"],
+        "Needing alone time is autonomy; being together is connection. That is the internal form of integration–separation."),
+      Q("The idea that relationships do not progress through fixed linear stages is best captured by which assumption?",
+        "Change (praxis)",
+        ["Contradictions", "Totality", "Coherence"],
+        "Relationships are nonlinear and changing, with praxis describing the ongoing change. Totality is awareness of both sides of a contradiction."),
+      Q("A person recognizes that wanting closeness and wanting space are both real and always present in the relationship. Which assumption?",
+        "Totality",
+        ["Nonlinearity", "Praxis", "Selection"],
+        "Totality means being aware of both parts of the contradiction. Selection is a strategy, not an assumption.")
+    ],
+    culture: [
+      Q("A sales-driven technology company celebrates quick wins, runs frequent team competitions, and focuses on volume of customer interactions over long-term strategy. Which Deal & Kennedy type?",
+        "Work hard, play hard",
+        ["Process", "Tough-guy macho", "Bet-your-company"],
+        "Quick feedback and relatively low risk per interaction, like sales."),
+      Q("A hospital system where staff follow detailed protocols and rarely see the outcome of any single step. Which Deal & Kennedy type?",
+        "Process culture",
+        ["Work hard, play hard", "Tough-guy macho", "Bet-your-company"],
+        "Slow feedback and low individual risk, with rules and procedures valued, mark a process culture.")
+    ]
+  };
+  Object.keys(extra).forEach(k => window.QUIZZES[k].push(...extra[k]));
 })();
