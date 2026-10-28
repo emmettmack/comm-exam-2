@@ -1,5 +1,6 @@
 (function () {
   const C = window.COURSES;
+  C.forEach(c => { c.quiz = window.QUIZZES[c.id]; });
   const app = document.getElementById('app');
   const KEY = 'commexam2.progress.v1';
 
