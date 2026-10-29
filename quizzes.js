@@ -490,6 +490,10 @@
         "Surprise at a break from someone's usual behavior is a predictive expectancy. Compensation is a reaction, and the other two belong to other theories.")
     ],
     face: [
+      Q("Whenever Len and Jerod meet after time apart they greet each other with 'Them's my boots!', a reference to a film they watched together. This greeting reflects:",
+        "Unique interactional patterns",
+        ["Assumptions of familiarity", "Face alignment", "Cyclic alternation"],
+        "A private greeting or inside joke that only this pair shares is a unique interactional pattern. (Confirmed by the class practice quiz; this concept isn't in the lecture notes.)"),
       Q("While visiting an unfamiliar town, Greg goes to a service window to buy a train ticket and asks how to find his platform. The best name for his communication with the ticket seller is:",
         "Dyadic communication",
         ["Emotional attachment", "Mutual influence", "Repeated interaction"],
@@ -566,5 +570,30 @@
         "Slow feedback and low individual risk, with rules and procedures valued, mark a process culture.")
     ]
   };
+  const weak = {
+    culture: [
+      Q("What separates a work hard, play hard culture from a tough-guy macho culture?",
+        "Both get fast feedback, but tough-guy macho involves high risk and work hard, play hard involves low risk",
+        ["Work hard, play hard has slow feedback and tough-guy macho has fast feedback", "Tough-guy macho has low risk and work hard, play hard has high risk", "They differ only in company size"],
+        "Both have fast feedback. Risk is what differs: sales (low risk) vs. finance (high risk)."),
+      Q("A tech company's reps close deals daily and celebrate every win, but no single deal threatens the company. Which type, and why not tough-guy macho?",
+        "Work hard, play hard; fast feedback but low risk, so not tough-guy macho",
+        ["Tough-guy macho; fast feedback is enough", "Process; the feedback is fast", "Bet-your-company; sales are risky"],
+        "Quick wins and volume mean fast feedback. Because each deal is small, the risk is low.")
+    ],
+    cat: [
+      Q("Cheerleaders use inside terms with each other but speak plainly to people outside the squad. Which pairing is correct?",
+        "Restricted code with the in-group; elaborated code with the out-group",
+        ["Elaborated code with the in-group; restricted code with the out-group", "Restricted code with both groups", "In-group elitism with the in-group; a restricted code with the out-group"],
+        "In-groups use restricted codes among themselves, and we use elaborated codes with the out-group.")
+    ],
+    set: [
+      Q("Penelope's parents fought constantly. What shapes her expectations of future relationships, in Thibaut & Kelley's terms?",
+        "Comparison level",
+        ["Relational expectations", "Comparison level of alternatives", "The minimax principle"],
+        "Comparison level is the standard built from relationships around you and past ones, like parents fighting.")
+    ]
+  };
+  Object.keys(weak).forEach(k => window.QUIZZES[k].push(...weak[k]));
   Object.keys(extra).forEach(k => window.QUIZZES[k].push(...extra[k]));
 })();
